@@ -1,0 +1,121 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+select,
+input[type="text"],
+input[type="date"] {
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+input::placeholder {
+    color: darkgray;
+}
+
+.container {
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.logo {
+    margin-bottom: 1rem;
+}
+
+.formulario,
+.tabela {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.campo label {
+    font-weight: bold;
+}
+
+.endereco {
+    grid-column: 1 / span 2;
+}
+
+.cabecalho {
+    font-size: 1.5rem;
+    color: #663399;
+    font-weight: bold;
+}
+
+.resultado {
+    color: #4169e1;
+}
+
+.corpo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.rodape {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.corpo-botao {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.corpo-botao:hover {
+    filter: brightness(80%);
+}
+
+.primario {
+    background-color: #3b82f6;
+    color: #fff;
+}
+.secundario {
+    background-color: #dcdcdc;
+    color: #000;
+}
+.sucesso {
+    background-color: #008000;
+    color: #fff;
+}
+.perigo {
+    background-color: #ce0000;
+    color: #fff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    background-color: #dcdcdc;
+    height: 3rem;
+    cursor: default;
+}
+td {
+    text-align: center;
+    height: 3rem;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+}
